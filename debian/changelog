@@ -1,5 +1,97 @@
-template-repository (1.0-1) unstable; urgency=medium
+python-repoze.sphinx.autointerface (1.0.0-1) unstable; urgency=medium
 
-  * Initial release
+  * Team upload.
+  * New upstream version 1.0.0 (Closes: #1013378)
+  * Bump debhelper compatibility level to 13
+  * Bump Standards-Version to 4.6.1 (no changes needed)
+  * Add "Rules-Requires-Root: no"
+  * Add d/salsa-ci.yml
+  * Add smoke testsuite: autopkgtest-pkg-python
+  * Add upstream/metadata
+  * POint homepage to github
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Nilesh Patra <nilesh@debian.org>  Fri, 24 Jun 2022 19:20:52 +0530
+
+python-repoze.sphinx.autointerface (0.8-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Fixed homepage (https)
+  * Fixed VCS URL (https)
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/copyright: Use https protocol in Format field
+  * d/control: Remove trailing whitespaces
+  * Convert git repository from git-dpm to gbp layout
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Debian Janitor ]
+  * Upgrade to newer source format.
+  * Bump debhelper dependency to >= 9, since that's what is used in
+    debian/compat.
+  * Bump debhelper from old 9 to 12.
+
+ -- Sandro Tosi <morph@debian.org>  Mon, 20 Jun 2022 01:58:37 -0400
+
+python-repoze.sphinx.autointerface (0.8-0.2) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Drop python2 support; Closes: #938132
+
+ -- Sandro Tosi <morph@debian.org>  Thu, 10 Oct 2019 12:42:02 -0400
+
+python-repoze.sphinx.autointerface (0.8-0.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * New upstream version.
+  * Changed source format to 3.0 (quilt).
+  * debian/control:
+   - Debhelper bump to >= 9
+   - Removed unnecessary versions from Build-Depends (python-all,
+     python-sphinx)
+   - Removed Depends from binaries, handled by dh-python instead
+   - Standards-Version bump to 3.9.8
+   - Use https:// URL for Vcs-Browser
+   - New binary package for Python 3 packaging of the module (Closes: #826338)
+  * debian/rules:
+   - Updated to produce Python 3 package
+  * debian/docs:
+   - README.txt is now README.rst
+  * debian/copyright:
+   - Added short name for license, it's almost ZPL
+   - Updated Format: URL to https:// version
+
+ -- Iain R. Learmonth <irl@debian.org>  Sat, 02 Jul 2016 01:09:58 +0100
+
+python-repoze.sphinx.autointerface (0.6.2-2) unstable; urgency=low
+
+  [ Jakub Wilk ]
+  * Use canonical URIs for Vcs-* fields.
+
+  [ Dimitri John Ledkov ]
+  * Bump debhelper compat to 9, to drop python-support
+  * Add dh_python2 build-dependency
+  * Actually rebuild with dh_python2
+
+ -- Dimitri John Ledkov <xnox@ubuntu.com>  Sun, 20 Apr 2014 15:17:54 +0100
+
+python-repoze.sphinx.autointerface (0.6.2-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control: Bump Standards-Version to 3.9.3
+  * debian/copyright: Fix to comply with copyright-format/1.0
+  * Migrate from python-support to dh_python2.
+    debian/control:
+    - Remove python-support from Build-Depends.
+    - Build-Depend on python-all (>= 2.6.6-3~).
+    debian/rules:
+    - Add '--with python2' after 'dh $@'
+
+ -- Bernhard Reiter <ockham@raz.or.at>  Wed, 02 May 2012 20:31:10 +0200
+
+python-repoze.sphinx.autointerface (0.4-1) unstable; urgency=low
+
+  * Initial release (Closes: #600924)
+
+ -- Bernhard Reiter <ockham@raz.or.at>  Thu, 21 Oct 2010 14:05:00 +0200
