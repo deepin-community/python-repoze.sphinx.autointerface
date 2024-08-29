@@ -1,0 +1,24 @@
+From: Jerry James <loganjerry@gmail.com>
+Date: Mon, 29 Jan 2024 09:28:30 -0700
+Subject: Fix tests with Sphinx 7.2.x
+
+Origin: other, https://github.com/repoze/repoze.sphinx.autointerface/pull/22
+Bug: https://github.com/repoze/repoze.sphinx.autointerface/issues/21
+Bug-Debian: https://bugs.debian.org/1057599
+Last-Update: 2024-06-24
+---
+ repoze/sphinx/tests/test_autointerface.py | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/repoze/sphinx/tests/test_autointerface.py b/repoze/sphinx/tests/test_autointerface.py
+index d2682f9..64ae46b 100644
+--- a/repoze/sphinx/tests/test_autointerface.py
++++ b/repoze/sphinx/tests/test_autointerface.py
+@@ -29,6 +29,7 @@ class Options(dict):
+     imported_members = False
+     show_inheritance = False
+     noindex = False
++    no_index = False
+     annotation = None
+     synopsis = ''
+     platform = ''
