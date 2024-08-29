@@ -1,3 +1,12 @@
+python-repoze.sphinx.autointerface (1.0.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Fix tests with Sphinx 7.2.x (closes: #1057599).
+  * Use pybuild-plugin-pyproject.
+  * Standards-Version: 4.7.0 (no changes required).
+
+ -- Colin Watson <cjwatson@debian.org>  Mon, 24 Jun 2024 11:13:04 +0100
+
 python-repoze.sphinx.autointerface (1.0.0-1) unstable; urgency=medium
 
   * Team upload.
